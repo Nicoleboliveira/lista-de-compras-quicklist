@@ -1,0 +1,81 @@
+header {
+  display: none;
+}
+.link-voltar {
+  text-decoration: none;
+  font: var(--link);
+  color: var(--color-brand);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.12rem;
+  margin-left: 1.5rem;
+}
+h1 {
+  font: var(--title);
+  color: var(--content-primary);
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+#item {
+  border: 0.15rem solid var(--border-primary);
+  width: 20.37rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  font: var(--paragraph);
+  color: var(--content-primary);
+  padding-left: 1rem;
+}
+input::placeholder {
+  color: var(--content-tertiary);
+  opacity: 0.6;
+}
+#item:focus,
+#item:active {
+  border-color: var(--color-brand);
+  outline: none; /* Remove a borda azul padrão do navegador */
+}
+button {
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 0.75rem;
+  font: var(--paragraph);
+  color: var(--always-white);
+  width: 21.8rem;
+  height: 2.75rem;
+}
+
+button:hover {
+  background-color: var(--color-brand-hover);
+}
+.aligment {
+  display: grid;
+  margin-left: 1.5rem;
+  margin-top: 2.75rem;
+  gap: 1rem;
+}
+@media (min-width: 80rem) {
+  .desktop-only {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.56rem;
+  }
+  .link-voltar {
+    margin-top: 3.87rem;
+    margin-left: 23.06rem;
+  }
+  h1 {
+    margin-left: 23.06rem;
+  }
+  #item {
+    width: 28.18rem;
+  }
+  .aligment {
+    display: flex;
+    margin-left: 23.06rem;
+  }
+  button {
+    width: 10rem;
+    height: 2.75rem;
+  }
+}
