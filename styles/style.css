@@ -47,6 +47,7 @@ input::placeholder {
   color: var(--always-white);
   width: 21.8rem;
   height: 2.75rem;
+  cursor: pointer;
 }
 
 #button-1:hover {
@@ -116,6 +117,31 @@ input::placeholder {
 .button-trash {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+#msg {
+  background-color: var(--color-danger);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  margin-top: 2.25rem;
+
+  & button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+#msg-left {
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-left: 0.5rem;
+    font: var(--label);
+    color: var(--always-white);
+  }
 }
 
 @media (min-width: 80rem) {

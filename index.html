@@ -26,31 +26,24 @@
           Voltar
         </a>
         <h1>Compras da semana</h1>
-        <form>
-          <div class="aligment">
-            <input
-              type="text"
-              name="item"
-              id="item"
-              placeholder="Adicione um novo item"
-            />
-            <button id="button-1" type="submit">Adicionar item</button>
-          </div>
-        </form>
-        <div id="list">
-          <div class="item-list">
-            <label class="custom-checkbox">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-              <span class="description">Pão de forma</span>
-            </label>
-            <button class="button-trash">
-              <img src="assets/trash.svg" alt="" />
-            </button>
-          </div>
+
+        <div class="aligment">
+          <input
+            type="text"
+            name="item"
+            id="item"
+            placeholder="Adicione um novo item"
+          />
+          <button id="button-1" onclick="adicionarItem()">
+            Adicionar item
+          </button>
         </div>
+
+        <div id="list"></div>
+
+        <div id="msg-container"></div>
       </div>
     </div>
-    <script></script>
+    <script src="script.js"></script>
   </body>
 </html>

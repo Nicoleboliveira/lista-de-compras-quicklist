@@ -20,7 +20,7 @@
 
   --font-family: "Inter", sans-serif;
   --title: bold 1.5rem var(--font-family);
-  --label: 1rem 1.25rem var(--font-family);
+  --label: 1rem var(--font-family);
   --paragraph: 1rem var(--font-family);
   --link: 0.87rem var(--font-family);
 }
