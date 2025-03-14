@@ -19,21 +19,37 @@
       <img src="assets/logo.svg" alt="logo quicklist" />
     </header>
 
-    <a href="#" class="link-voltar">
-      <img src="assets/arrow-left.svg" alt="icone seta" />
-      Voltar
-    </a>
-    <h1>Compras da semana</h1>
-    <form>
-      <div class="aligment">
-        <input
-          type="text"
-          name="item"
-          id="item"
-          placeholder="Adicione um novo item"
-        />
-        <button type="submit">Adicionar item</button>
+    <div id="corpo">
+      <div id="container-geral">
+        <a href="#" class="link-voltar">
+          <img src="assets/arrow-left.svg" alt="icone seta" />
+          Voltar
+        </a>
+        <h1>Compras da semana</h1>
+        <form>
+          <div class="aligment">
+            <input
+              type="text"
+              name="item"
+              id="item"
+              placeholder="Adicione um novo item"
+            />
+            <button id="button-1" type="submit">Adicionar item</button>
+          </div>
+        </form>
+        <div id="list">
+          <div class="item-list">
+            <label class="custom-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="description">Pão de forma</span>
+            </label>
+            <button class="button-trash">
+              <img src="assets/trash.svg" alt="" />
+            </button>
+          </div>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>

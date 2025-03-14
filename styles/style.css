@@ -1,3 +1,8 @@
+#corpo {
+  display: flex;
+  justify-content: center;
+}
+
 header {
   display: none;
 }
@@ -9,12 +14,11 @@ header {
   align-items: center;
   gap: 0.5rem;
   margin-top: 2.12rem;
-  margin-left: 1.5rem;
 }
 h1 {
   font: var(--title);
   color: var(--content-primary);
-  margin-left: 1.5rem;
+
   margin-top: 1rem;
 }
 #item {
@@ -35,7 +39,7 @@ input::placeholder {
   border-color: var(--color-brand);
   outline: none; /* Remove a borda azul padrão do navegador */
 }
-button {
+#button-1 {
   background-color: var(--color-brand);
   border: none;
   border-radius: 0.75rem;
@@ -45,36 +49,93 @@ button {
   height: 2.75rem;
 }
 
-button:hover {
+#button-1:hover {
   background-color: var(--color-brand-hover);
 }
 .aligment {
   display: grid;
-  margin-left: 1.5rem;
+
   margin-top: 2.75rem;
   gap: 1rem;
 }
+#list {
+  margin-top: 2.5rem;
+}
+.item-list {
+  background-color: var(--background-secondary);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.custom-checkbox input {
+  display: none; /* Esconde o checkbox padrão */
+}
+.checkmark {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #b0b0b0; /* Cor do estado default */
+  border-radius: 6px; /* Borda arredondada */
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Estado Hover */
+.custom-checkbox:hover .checkmark {
+  border-color: var(--border-hover);
+}
+
+/* Estado Selecionado */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #ca3884; /* Cor rosa ao ser marcado */
+  border-color: #ca3884;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.description {
+  font: var(--paragraph);
+  color: var(--content-secondary);
+  margin-left: 0.75rem;
+}
+.button-trash {
+  border: none;
+  background-color: transparent;
+}
+
 @media (min-width: 80rem) {
   .desktop-only {
     display: flex;
     justify-content: center;
     margin-top: 1.56rem;
+    width: 100%;
   }
   .link-voltar {
     margin-top: 3.87rem;
-    margin-left: 23.06rem;
   }
-  h1 {
-    margin-left: 23.06rem;
-  }
+
   #item {
     width: 28.18rem;
   }
   .aligment {
     display: flex;
-    margin-left: 23.06rem;
   }
-  button {
+  #button-1 {
     width: 10rem;
     height: 2.75rem;
   }
